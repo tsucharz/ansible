@@ -1,5 +1,5 @@
 - hosts: localhost
   become: true
   tasks:
-  - name: Install htop
-    yum: name=htop
+  - name: Install bash-completion
+    yum: name=bash-completion
