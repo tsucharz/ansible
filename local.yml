@@ -2,4 +2,8 @@
   become: true
   tasks:
   - name: Install bash-completion
-    yum: name=bash-completion
+    yum: name={{item}}
+    with_items:
+      - bash-completion
+      - bind-utils
+      - bc
